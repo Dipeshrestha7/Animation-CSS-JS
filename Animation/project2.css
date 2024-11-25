@@ -1,0 +1,55 @@
+.container{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(red,green,blue);
+    text-align: center;
+    padding: 5vh 5vw;
+    margin: 10px 10px;
+    transition: 0.8s;
+    position: absolute;
+    animation-name: new1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    box-shadow: rgb(80, 76, 76) 7px 7px 7px 7px;
+    transition: 0.8s;
+}
+.container:hover{
+    background-image: linear-gradient(blue, red,green);
+}
+/* .container::before,::after{
+    width: 200px;
+    height: 200px;
+    background-image:purple;
+} */
+@keyframes new1 {
+    0%{
+        left:0;
+        top: 0;
+        transform: rotate(45deg);
+        background-image: red;
+    }
+    25%{
+        left:50%;
+        top: 0;
+        transform: rotate(90deg);
+        background-image: purple;
+    }
+    50%{
+        left:50%;
+        top: 50%;
+        transform: rotate(180deg);
+        background-image: yellow;
+    }
+    75%{
+        left:0%;
+        top: 50%;
+        transform: rotate(270deg);
+        background-image: blue;
+    }
+    100%{
+        left:0;
+        top: 0;
+        transform: rotate(360deg);
+        background-image: green;
+    }
+}

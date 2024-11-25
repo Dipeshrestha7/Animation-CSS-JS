@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background-color: lightseagreen;
+    position: absolute;
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+
+
+}
+
+@keyframes move1 {
+    0%{
+        left: 0;
+        background-color: aqua;
+        top: 0;
+    }
+    50%{
+        left: 75%;
+        background-color:blueviolet;
+        top: 0;
+    }
+    75%{
+        left: 75%;
+        background-color: blue;
+        top: 50%;
+    }
+    100%{
+        left:0;
+        background-color: rgb(138, 138, 147);
+        top: 50%;
+    }
+}
